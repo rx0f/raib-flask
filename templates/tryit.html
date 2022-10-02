@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerberos</title>
+    <link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
+  </head>
+  <body>
+    <div class="tryit">
+      <div class="hero-img">
+        {% include "components/navbar.html" %}
+        <div class="heading">
+          <h1>TRY IT.</h1>
+          <p>Choose you images.</p>
+        </div>
+      </div>
+      <form class="form" action="/model" method="post">
+        <label for="link">Link to the photo on Juno website</label>
+        <input name="link" type="text" />
+        <input type="submit" class="btn""></input>
+      </form>
+    </div>
+  </body>
+</html>
