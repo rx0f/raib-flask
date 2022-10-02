@@ -146,3 +146,19 @@ label {
     width: 100%;
     background-color: black;
 }
+
+.display{
+  width: 100%;
+  background-color: black;
+}
+
+.output-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.output {
+  width: 80%;
+}
